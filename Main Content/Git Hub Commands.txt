@@ -1,0 +1,66 @@
+git config --global user.name Aman --> Set name
+git config --global user.email sjff@gmail.com --> set email
+git config --global user.name --> shows set name
+git config --global user.email --> shows set email
+
+code . --> opens VS code
+
+git init --> to initialize the main folder
+ls --> it will show all the files in a list in the folder
+ls -lart --> it shows the hidden folders created inside the initialized folder
+
+git status --> shows status if new or modified files are available to be committed
+touch "file name" --> it adds new file inside the folder
+
+git add "file name" --> to add the file from Untracked to Staged
+git add -A --> it adds all the files in the folder
+
+git commit --> it commits the file from Staged to Unmodified
+git commit -m "commit message" --> it commits all the files at once
+git commit -a -m "commit message" --> it will directly 'add' and 'commit' all files at once
+git log --oneline --> to check all the commits we made till date
+
+git checkout "file name that you want to restore" -->if any changes is made to the file, this command will restore it
+git checkout -f -->it will restore all the files at once
+
+git log --> it shows the last committed files
+git log -p -2(for eg.) --> it will show last two committed files with all the changes that you made to the file
+
+git diff --> it shows the changes made in any file(Basically difference between working tree and staging area)
+git diff --staged --> it will show difference between last committ files and staging area
+
+git rm "file name" --> it will delete the file form everywhere
+git rm --cached "file name" --> it will remove the file from staging area but it will remain on the hard disk
+
+.gitignore --> create this file and write the name of files in it to be ignored.Where ever the file is present even inside any folder it will ignored.
+if file name = mylogs.log (it will ignore all the files with this name even present in any folder)
+if file name = /mylogs.log (it will ignore the file present at that level only, not in any folder)
+if file name = *.log (it will ignore all the files with format .log)
+if file name = folder/ (when we need to ignore the folder, write the folder name and /)
+
+#Branch - it creates a duplicate branch of master branch 
+git branch "branch name" --> will create a new duplicate branch(on which you can work with no fear to mess up anything and later you can merge it with the master branch)
+git branch --> will show all the branches and on which branch you are currently working on
+git checkout "branch name" --> will switch to that branch 
+git merge "branch name" --> it will merge this branch with the current branch you are working on
+git checkout -b "branch name" --> it will create a new branch and will also switch to that branch
+
+#Remote Repository(it is an url that will host our local repository)
+git remote add "repo name" "url" --> after creating a repo on github this whole link will be generated there
+git remote --> it will show the remote repo
+git remote -v --> it will show the url to fetch and push
+
+#Push command
+git push -u "remote repo name" "branch name" --> it will push all the contents on the branch on github
+eg. git push -u origin master
+
+Note : The code is "git push origin master" but we keep -u so that next time we need to write only "git push" and it will push from there only
+
+#Clone a repo
+git clone "url of repo that you want to clone" "folder name" --> the repo will cloned into the folder
+
+
+
+
+
+
